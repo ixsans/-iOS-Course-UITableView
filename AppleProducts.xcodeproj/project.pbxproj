@@ -12,6 +12,8 @@
 		467178FC1F7BA9B500B6149A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467178FA1F7BA9B500B6149A /* Main.storyboard */; };
 		467178FE1F7BA9B500B6149A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467178FD1F7BA9B500B6149A /* Assets.xcassets */; };
 		467179011F7BA9B500B6149A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467178FF1F7BA9B500B6149A /* LaunchScreen.storyboard */; };
+		4671790A1F7BAA0F00B6149A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467179091F7BAA0F00B6149A /* Product.swift */; };
+		4671790C1F7BACB400B6149A /* ProductLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671790B1F7BACB400B6149A /* ProductLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		467178FD1F7BA9B500B6149A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467179001F7BA9B500B6149A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467179021F7BA9B500B6149A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467179091F7BAA0F00B6149A /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4671790B1F7BACB400B6149A /* ProductLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		467178F51F7BA9B500B6149A /* AppleProducts */ = {
 			isa = PBXGroup;
 			children = (
+				467179081F7BA9EF00B6149A /* Model */,
 				467178F61F7BA9B500B6149A /* AppDelegate.swift */,
 				467178F81F7BA9B500B6149A /* ViewController.swift */,
 				467178FA1F7BA9B500B6149A /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				467179021F7BA9B500B6149A /* Info.plist */,
 			);
 			path = AppleProducts;
+			sourceTree = "<group>";
+		};
+		467179081F7BA9EF00B6149A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				467179091F7BAA0F00B6149A /* Product.swift */,
+				4671790B1F7BACB400B6149A /* ProductLine.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				467178F91F7BA9B500B6149A /* ViewController.swift in Sources */,
+				4671790C1F7BACB400B6149A /* ProductLine.swift in Sources */,
 				467178F71F7BA9B500B6149A /* AppDelegate.swift in Sources */,
+				4671790A1F7BAA0F00B6149A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
