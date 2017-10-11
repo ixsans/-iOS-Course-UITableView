@@ -22,7 +22,7 @@ class ProductLine
     //static func
     class func getProductLines() -> [ProductLine]
     {
-        return []
+        return [iDevices(), mac(), software(), iPod()]
     }
     
     //MARK: - Private Helper Method
