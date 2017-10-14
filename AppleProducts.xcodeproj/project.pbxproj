@@ -15,6 +15,7 @@
 		4671790C1F7BACB400B6149A /* ProductLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671790B1F7BACB400B6149A /* ProductLine.swift */; };
 		4688FFD71F84DFCE00E59267 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688FFD61F84DFCE00E59267 /* ProductTableViewCell.swift */; };
 		46FAA3461F7FC5B5003896E4 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAA3451F7FC5B5003896E4 /* ProductListViewController.swift */; };
+		46FD55CD1F91F36F0060939B /* ProducDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD55CC1F91F36F0060939B /* ProducDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4671790B1F7BACB400B6149A /* ProductLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLine.swift; sourceTree = "<group>"; };
 		4688FFD61F84DFCE00E59267 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		46FAA3451F7FC5B5003896E4 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		46FD55CC1F91F36F0060939B /* ProducDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProducDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				46FAA3451F7FC5B5003896E4 /* ProductListViewController.swift */,
+				46FD55CC1F91F36F0060939B /* ProducDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				4671790C1F7BACB400B6149A /* ProductLine.swift in Sources */,
 				46FAA3461F7FC5B5003896E4 /* ProductListViewController.swift in Sources */,
+				46FD55CD1F91F36F0060939B /* ProducDetailViewController.swift in Sources */,
 				467178F71F7BA9B500B6149A /* AppDelegate.swift in Sources */,
 				4671790A1F7BAA0F00B6149A /* Product.swift in Sources */,
 				4688FFD71F84DFCE00E59267 /* ProductTableViewCell.swift in Sources */,

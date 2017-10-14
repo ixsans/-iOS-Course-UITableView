@@ -26,4 +26,6 @@ class ProductTableViewCell: UITableViewCell {
         productDescriptionLabel?.text = product?.description
     }
     
+    
+    
 }
