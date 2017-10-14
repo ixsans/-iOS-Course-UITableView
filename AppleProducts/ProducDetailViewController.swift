@@ -24,6 +24,7 @@ class ProducDetailViewController: UITableViewController {
 
         productTitleTextView.text = product?.title
         productDescriptionTextView.text = product?.description
+        productTitleTextView.delegate = self
         productImageView.image = product?.image
     }
 
@@ -38,4 +39,19 @@ class ProducDetailViewController: UITableViewController {
     }
     
 
+}
+
+extension ProducDetailViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension ProducDetailViewController {
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        productDescriptionTextView.resignFirstResponder()
+        productTitleTextView.resignFirstResponder()
+    }
 }
