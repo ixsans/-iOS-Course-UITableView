@@ -51,4 +51,16 @@ class ProductListViewController: UITableViewController {
                 tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
+    
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let productToMove = productLines[sourceIndexPath.section].products[sourceIndexPath.row]
+        
+        productLines[destinationIndexPath.section].products.insert(productToMove, at: destinationIndexPath.row)
+        
+        productLines[sourceIndexPath.section].products.remove(at: sourceIndexPath.row)
+    }
 }
