@@ -38,6 +38,19 @@ class ProducDetailViewController: UITableViewController {
         }
     }
     
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+                let imagePicker = UIImagePickerController()
+                imagePicker.allowsEditing = false
+                imagePicker.sourceType = .photoLibrary
+                imagePicker.delegate = self
+                
+                present(imagePicker, animated: true, completion: nil)
+            }
+        }
+    }
 
 }
 
@@ -53,5 +66,22 @@ extension ProducDetailViewController {
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         productDescriptionTextView.resignFirstResponder()
         productTitleTextView.resignFirstResponder()
+    }
+}
+
+extension ProducDetailViewController : UIImagePickerControllerDelegate {
+    
+}
+
+extension ProducDetailViewController : UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            productImageView.image = selectedImage
+            productImageView.contentMode = .scaleAspectFit
+        }
+        
+        dismiss(animated: true, completion: nil)
     }
 }
